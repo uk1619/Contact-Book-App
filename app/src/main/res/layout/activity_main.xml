@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Search Bar for filtering contacts -->
+    <EditText
+        android:id="@+id/textbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:text="@string/college_phone_books"
+        android:textColor="@color/black" />
+
+
+
+
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_contact"
+        android:textSize="18sp"
+        android:padding="14dp"
+        android:background="@android:drawable/edit_text"
+        android:inputType="text"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp" />
+<!--        android:layout_marginBottom="dp" />-->
+
+
+    <!-- Contact List displayed as a ListView -->
+    <!-- Added padding for better appearance -->
+    <ListView
+        android:id="@+id/contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+
+
+    <!-- Button to add a new contact -->
+    <Button
+        android:id="@+id/add_contact_button"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_contacts"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:background="#FF6200EE"
+        />
+
+
+
+
+
+    <!-- Layout for adding a new contact, will be inflated dynamically in a dialog -->
+    <LinearLayout
+        android:id="@+id/add_contact_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <!-- Input fields for contact details with more padding and larger text -->
+        <EditText
+            android:id="@+id/name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:padding="14dp"
+            android:textSize="18sp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/phone_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:padding="14dp"
+            android:textSize="18sp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/email_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="14dp"
+            android:textSize="18sp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/address_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/address"
+            android:inputType="textPostalAddress"
+            android:padding="14dp"
+            android:textSize="18sp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

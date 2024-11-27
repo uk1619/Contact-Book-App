@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">College Phone Book</string>
+    <string name="search_contacts">Search Contacts</string>
+    <string name="add_new_contact">Add New Contact</string>
+    <string name="address">Address</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="name">Name</string>
+    <string name="search_contact">Search Contacts</string>
+    <string name="add_new_contacts">Add New Contact</string>
+    <string name="college_phone_book">College Phone Book</string>
+    <string name="college_phone_books">COLLEGE PHONE BOOK</string>
+</resources>
